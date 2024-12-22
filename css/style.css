@@ -139,10 +139,10 @@ a {
 .crystal_1 {
   background-image: url("../Assets/crystal_1.webp");
   position: absolute;
-  width: 1000px;
-  height: 1000px;
-  top: -100px;
-  right: -100px;
+  width: 900px;
+  height: 900px;
+  top: 0;
+  right: 0;
   background-size: cover;
 }
 
@@ -216,7 +216,7 @@ body {
   top: 36px;
   left: 50%;
   transform: translate(-50%, 0);
-  /* padding: 10px 16px; */
+  padding: 10px 16px;
 
   width: 100%;
   /* padding-top: 20px; */
@@ -711,7 +711,7 @@ li {
 }
 
 .partners_description {
-  width: 390px;
+  max-width: 390px;
   margin: 0;
   margin-bottom: 50px;
   font-family: JetBrains Mono, serif;

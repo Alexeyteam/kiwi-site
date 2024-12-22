@@ -25,11 +25,15 @@
     display: none;
   }
 
+  .container {
+    overflow: hidden;
+  }
+
   .crystal_1 {
-    width: 810px;
-    height: 810px;
-    top: -106px;
-    right: -276px;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    right: 0;
   }
 
   .crystal_3 {
@@ -132,14 +136,6 @@
 }
 
 @media (max-width: 600px) {
-  .crystal_1 {
-    width: 500px;
-    height: 500px;
-    right: 0;
-    left: 50px;
-    top: 50px;
-  }
-
   .crystal_2 {
     width: 300px;
     height: 300px;

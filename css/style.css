@@ -211,10 +211,14 @@ body {
 }
 
 .header_container {
-  position: sticky;
+  position: fixed;
   z-index: 10;
-  top: 0;
-  padding: 10px 16px;
+  top: 36px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  /* padding: 10px 16px; */
+
+  width: 100%;
   /* padding-top: 20px; */
 }
 

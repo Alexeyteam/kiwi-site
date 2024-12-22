@@ -1,3 +1,9 @@
+@media (max-width: 1440px) {
+  .services_card {
+    width: 48%;
+  }
+}
+
 /* @media (max-width: 1460px) {
   .owl-carousel {
     display: block;
@@ -24,6 +30,10 @@
     height: 810px;
     top: -106px;
     right: -276px;
+  }
+
+  .crystal_3 {
+    top: 750px;
   }
 
   .nav_button {
@@ -113,5 +123,10 @@
 
   .footer_left_logo {
     font-size: 26px;
+  }
+
+  .protection {
+    margin-top: 30px;
+    padding-top: 30px;
   }
 }

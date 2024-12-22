@@ -25,44 +25,50 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/simple-popup-modal@1.1.3/dist/jquery.simple-popup.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
     <title>Kiwi</title>
   </head>
   <body>
-    <main class="container main">
-      <div class="crystal_1"></div>
-      <header class="header_container">
-        <div class="header_wrapper">
-          <div class="line"></div>
-          <a href="#" class="logo a">&lt;KIWI CODE&gt;</a>
+    <header class="header_container container">
+      <div class="header_wrapper">
+        <div class="line"></div>
+        <a href="#" class="logo a">&lt;KIWI CODE&gt;</a>
 
-          <nav class="nav">
-            <ul class="nav_list">
-              <li>
-                <a href="#about_us" class="nav_link a">о нас</a>
-              </li>
-              <li>
-                <a href="#services" class="nav_link a">услуги</a>
-              </li>
-              <li>
-                <a href="#request" class="nav_link a">оставьте заявку</a>
-              </li>
-              <li>
-                <a href="#our_jobs" class="nav_link a">наши работы</a>
-              </li>
-              <li>
-                <a href="#contacts" class="nav_link a">контакты</a>
-              </li>
-            </ul>
-            <button class="nav_button">
-              <img src="./Assets/close.svg" alt="" class="svg_close hidden" />
-              <img src="./Assets/nav-open.svg" alt="" class="svg_open" />
-            </button>
-          </nav>
-        </div>
-      </header>
+        <nav class="nav">
+          <ul class="nav_list">
+            <li>
+              <a href="#about_us" class="nav_link a">о нас</a>
+            </li>
+            <li>
+              <a href="#services" class="nav_link a">услуги</a>
+            </li>
+            <li>
+              <a href="#request" class="nav_link a">оставьте заявку</a>
+            </li>
+            <li>
+              <a href="#our_jobs" class="nav_link a">наши работы</a>
+            </li>
+            <li>
+              <a href="#contacts" class="nav_link a">контакты</a>
+            </li>
+          </ul>
+          <button class="nav_button">
+            <img src="./Assets/close.svg" alt="" class="svg_close hidden" />
+            <img src="./Assets/nav-open.svg" alt="" class="svg_open" />
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main class="container main">
       <section class="section hero" id="about_us">
+        <div class="crystal_1"></div>
+
         <div class="hero_text_wrapper">
           <p class="hero_preheader">МОЖНО И ТУТ ЧТО НИБУДЬ НАПИСАТЬ</p>
 
@@ -76,6 +82,8 @@
         </div>
       </section>
       <section class="section services" id="services">
+        <div class="crystal_2"></div>
+        <div class="crystal_3"></div>
         <h2 class="services_header">Услуги</h2>
         <div class="services_cards">
           <div class="services_card">
@@ -90,8 +98,8 @@
               </p>
             </div>
             <div class="services_card_bottom">
-              <img src="./Assets/list.svg" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <img src="./Assets/list.svg" alt="" />
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -109,7 +117,7 @@
             </div>
             <div class="services_card_bottom">
               <img src="./Assets/bag.svg" alt="" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -129,7 +137,7 @@
             </div>
             <div class="services_card_bottom">
               <img src="./Assets/website.svg" alt="" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -147,7 +155,7 @@
             </div>
             <div class="services_card_bottom">
               <img src="./Assets/wallet.svg" alt="" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -165,7 +173,7 @@
             </div>
             <div class="services_card_bottom">
               <img src="./Assets/pencil.svg" alt="" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -185,7 +193,7 @@
             </div>
             <div class="services_card_bottom">
               <img src="./Assets/phone.svg" alt="" />
-              <a href="#request" class="services_card_bottom_button btn"
+              <a href="#" class="services_card_bottom_button btn one"
                 >заказать</a
               >
             </div>
@@ -207,6 +215,11 @@
                 class="request_input2 input"
                 placeholder="Email"
               />
+              <input
+                type="tel"
+                class="request_input2 input"
+                placeholder="Номер телефона"
+              />
               <textarea
                 placeholder="Сообщение"
                 class="request_input3 input"
@@ -226,7 +239,7 @@
               </div>
             </div>
           </div>
-          <img src="./Assets/kiwi picture.webp" alt="" class="request_banner" />
+          <img src="./Assets/kiwi_picture.webp" alt="" class="request_banner" />
         </div>
       </section>
       <section class="section our_jobs" id="our_jobs">
@@ -234,7 +247,7 @@
         <ul class="our_jobs_cards">
           <li class="our_jobs_card">
             <img
-              src="./Assets/mosaic picture.webp"
+              src="./Assets/mosaic_picture.webp"
               alt=""
               class="our_jobs_card_img"
             />
@@ -250,7 +263,7 @@
             </ul>
           </li>
           <li class="our_jobs_card">
-            <img src="./Assets/money.webp" class="our_jobs_card_img" />
+            <img src="./Assets/money.webp" class="our_jobs_card_img" alt="" />
             <h3 class="our_jobs_card_header">Название работы или проекта</h3>
             <p class="our_jobs_card_description">
               Разработали айдентику, беб дизайн и разработали интернет магазин
@@ -309,7 +322,7 @@
         <div class="owl-carousel owl-theme">
           <div>
             <img
-              src="./Assets/mosaic picture.webp"
+              src="./Assets/mosaic_picture.webp"
               alt=""
               class="our_jobs_card_img"
             />
@@ -325,7 +338,7 @@
             </ul>
           </div>
           <div>
-            <img src="./Assets/money.webp" class="our_jobs_card_img" />
+            <img src="./Assets/money.webp" class="our_jobs_card_img" alt="" />
             <h3 class="our_jobs_card_header">Название работы или проекта</h3>
             <p class="our_jobs_card_description">
               Разработали айдентику, беб дизайн и разработали интернет магазин
@@ -392,7 +405,13 @@
           <li class="partners_icon">
             <img src="./Assets/shopify.svg" alt="" class="partners_icon_img" />
           </li>
-          <img src="./Assets/wordpress.svg" alt="" class="partners_icon_img" />
+          <li>
+            <img
+              src="./Assets/wordpress.svg"
+              alt=""
+              class="partners_icon_img"
+            />
+          </li>
           <li class="partners_icon">
             <img
               src="./Assets/Woocomers.svg"
@@ -467,9 +486,42 @@
           </div>
         </div>
       </div>
-
       <p class="protection">© 2024, KIWI CODE, Все права защищены</p>
     </footer>
+    <div id="popup" class="hidden">
+      <div class="request_wrapper request_wrapper_popup">
+        <div class="input_wrapper input_wrapper_popup">
+          <div class="inputs">
+            <input type="text" class="request_input1 input" placeholder="Имя" />
+            <input
+              type="email"
+              class="request_input2 input"
+              placeholder="Email"
+            />
+            <input
+              type="tel"
+              class="request_input2 input"
+              placeholder="Номер телефона"
+            />
+            <textarea
+              placeholder="Сообщение"
+              class="request_input3 input"
+            ></textarea>
+          </div>
+          <div class="inputs_button">
+            <div class="checkbox_container">
+              <input type="checkbox" id="#cb" />
+              <label for="cb">
+                Даю свое согласине на обработку моих персональных данных
+              </label>
+            </div>
+            <div class="button_container">
+              <button class="button_container_button">&lt;отправить&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -481,6 +533,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-popup-modal@1.1.3/dist/jquery.simple-popup.min.js"></script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>

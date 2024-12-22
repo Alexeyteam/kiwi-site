@@ -18,6 +18,19 @@ $(document).ready(function () {
       },
     },
   });
+
+  $("a.one").on("click", function (e) {
+    var options = {
+      afterClose: function () {
+        // alert("Closed now!");
+      },
+    };
+    const popup = document.querySelector("#popup");
+    e.preventDefault();
+    $(this).simplePopup({ type: "html", htmlSelector: "#popup" });
+    $(this).simplePopup(options);
+    popup.classList.remove("hidden");
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -25,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".nav_list");
   const svg_open = document.querySelector(".svg_open");
   const svg_close = document.querySelector(".svg_close");
+  const popup = document.querySelector("#popup");
 
   burgerButton.addEventListener("click", () => {
     menu.classList.toggle("open");
@@ -35,6 +49,5 @@ document.addEventListener("DOMContentLoaded", () => {
       svg_open.classList.add("hidden");
       svg_close.classList.remove("hidden");
     }
-    console.log("click");
   });
 });

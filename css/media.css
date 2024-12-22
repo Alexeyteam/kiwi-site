@@ -18,6 +18,14 @@
   .nav_list {
     display: none;
   }
+
+  .crystal_1 {
+    width: 810px;
+    height: 810px;
+    top: -106px;
+    right: -276px;
+  }
+
   .nav_button {
     display: block;
   }

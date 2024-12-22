@@ -132,13 +132,21 @@ a {
   text-decoration: none;
 }
 
+.crystal_1 {
+  background-image: url("/Assets/crystal_1.webp");
+  position: absolute;
+  width: 1535px;
+  height: 1535px;
+  top: -335px;
+  right: -389px;
+  background-size: cover;
+}
+
 .container {
   background-color: #0f0f0f;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
-  position: relative;
-  /* overflow: hidden; */
 }
 
 .logo {
@@ -176,7 +184,11 @@ a {
 }
 
 .header_container {
-  padding-top: 20px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  padding: 10px 16px;
+  /* padding-top: 20px; */
 }
 
 .owl-carousel {
@@ -186,6 +198,7 @@ a {
 .header_wrapper {
   background-color: rgba(66, 66, 66, 30%);
   backdrop-filter: blur(10px);
+  /* backdrop-filter: opacity(30%); */
   border-radius: 30px 30px 30px 30px;
   display: flex;
   padding: 16px 20px;
@@ -201,7 +214,6 @@ a {
 }
 
 .hero {
-  position: relative;
   min-height: 850px;
   padding: 50px 0;
 }
@@ -325,6 +337,7 @@ a {
   font-weight: 300;
   border: none;
   background-color: #5dcf12;
+  color: #000;
   border-radius: 20px;
   padding: 7px 20px 9px 20px;
 }

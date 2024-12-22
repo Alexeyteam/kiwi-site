@@ -133,7 +133,7 @@ a {
 }
 
 .crystal_1 {
-  background-image: url("/Assets/crystal_1.webp");
+  background-image: url("../Assets/crystal_1.webp");
   position: absolute;
   width: 1535px;
   height: 1535px;

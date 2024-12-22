@@ -271,16 +271,20 @@ body {
 }
 
 .hero_button {
+  display: flex;
   background-color: #5dcf12;
   border-radius: 20px;
-  margin-top: 30px;
   width: 205px;
   height: 40px;
+  margin-top: 30px;
   padding: 14px 50px;
   font-family: JetBrains Mono, serif;
   font-size: 12px;
   font-weight: 400;
   border: none;
+  color: #000;
+  justify-content: center;
+  align-items: center;
 }
 
 .simple-popup-content {
@@ -429,6 +433,8 @@ body {
 
 .request_banner {
   width: 49%;
+  object-fit: cover;
+  border-radius: 30px;
 }
 
 .request_input1,

@@ -1,0 +1,109 @@
+/* @media (max-width: 1460px) {
+  .owl-carousel {
+    display: block;
+  }
+
+  .our_jobs_cards {
+    display: none;
+  }
+} */
+
+@media (max-width: 970px) {
+  .button_container_button {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_list {
+    display: none;
+  }
+  .nav_button {
+    display: block;
+  }
+
+  .our_jobs_cards {
+    display: none;
+  }
+
+  .owl-carousel {
+    display: block !important;
+  }
+  .open {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    align-items: end;
+  }
+
+  /* .open .line {
+    display: block;
+  } */
+
+  .nav_link {
+    text-transform: uppercase;
+  }
+
+  .hero_header {
+    width: 100%;
+  }
+
+  .hero_description {
+    width: 100%;
+  }
+
+  .hero_button {
+    width: 100%;
+  }
+
+  .services_card {
+    width: 100%;
+  }
+
+  .request_banner {
+    display: none;
+  }
+
+  .inputs_button {
+    flex-direction: column;
+    gap: 63px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .input_wrapper {
+    width: 100%;
+  }
+
+  .button_container_button {
+    width: 250px;
+    margin: 0;
+  }
+
+  .partners {
+    align-items: start;
+  }
+
+  .partners_icons {
+    gap: 40px;
+  }
+
+  .partners_icon_img {
+    height: 35px;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .footer_left_logo {
+    font-size: 26px;
+  }
+}

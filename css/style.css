@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -243,6 +244,26 @@ a {
   border: none;
 }
 
+.btn {
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05);
+  background-color: #63de10;
+}
+
+.a {
+  transition: 0.3s;
+}
+
+.a:hover,
+.a:focus {
+  transform: scale(1.05);
+  color: #5dcf12;
+}
+
 .services {
   padding-top: 50px;
   padding-bottom: 65px;
@@ -476,6 +497,7 @@ label {
 .our_jobs_card_img {
   width: 100%;
   height: 440px;
+  border-radius: 30px;
 }
 
 .our_jobs_card_header {

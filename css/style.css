@@ -462,7 +462,7 @@ textarea {
   box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
 }
 
-label {
+.label_normal {
   color: #fff;
   font-family: JetBrains Mono, serif;
   font-size: 12px;
@@ -470,40 +470,40 @@ label {
   font-weight: 300;
 }
 
-.checkbox_container {
+.checkbox_container_normal {
   display: flex;
   align-items: center;
 }
 
-.checkbox_container label {
+.checkbox_container_normal .label_normal {
   cursor: pointer;
   display: flex;
   align-items: center;
 }
 
-.checkbox_container input[type="checkbox"] {
+.checkbox_container_normal .checkbox_normal[type="checkbox"] {
   cursor: pointer;
   opacity: 0;
   position: absolute;
 }
 
-.checkbox_container label::before {
+.checkbox_container_normal .label_normal::before {
   content: "";
-  min-width: 16px;
-  min-height: 18px;
-  border-radius: 1em;
+  min-width: 13px;
+  min-height: 20px;
+  border-radius: 50%;
   border: 0.05em solid black;
   background-color: white;
   margin-right: 10px;
-  padding: 2px;
+  padding: 4px 8px;
 }
 
-.checkbox_container label:hover::before,
-.checkbox_container input[type="checkbox"]:hover + label::before {
-  background-color: #35e87d;
+.checkbox_container_normal .checkbox_normal:hover::before,
+.checkbox_container_normal .checkbox_normal:hover + .label_normal::before {
+  background-color: #b9b9b9;
 }
 
-.checkbox_container input[type="checkbox"]:checked + label::before {
+.checkbox_container_normal .checkbox_normal:checked + .label_normal::before {
   content: "\002714";
   background-color: #27ae60;
   display: flex;
@@ -528,7 +528,7 @@ label {
 }
 
 .button_container_button {
-  width: 250px;
+  width: 230px;
   border-radius: 30px;
   padding: 0;
   background-color: #5dcf12;
@@ -736,4 +736,50 @@ li {
 .input_wrapper_popup {
   background-color: transparent;
   width: 100%;
+}
+
+.checkbox_label {
+  position: relative;
+  display: block;
+  line-height: 18px;
+  font-size: 12px;
+  font-family: JetBrains Mono, serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+.check {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 50%;
+  top: 0px;
+  left: 0;
+  background-color: #fff;
+  content: "";
+}
+
+.checkbox_label:hover .checkbox ~ .check {
+  background-color: #b9b9b9;
+}
+.checkbox_label .checkbox:checked ~ .check {
+  background-color: #27ae60;
+}
+
+.check::after {
+  content: "\002714";
+  position: absolute;
+  top: 4px;
+  left: 8px;
 }

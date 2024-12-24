@@ -677,6 +677,10 @@ textarea {
   gap: 20px;
 }
 
+.footer_right_item_value {
+  color: #fff;
+}
+
 .footer_right_list_left {
   margin-right: 31px;
   display: flex;
